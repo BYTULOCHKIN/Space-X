@@ -1,0 +1,269 @@
+body {
+  background-color: #010001;
+  width: 100%;
+  max-width: 1230px;
+  padding-top: 55px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.header {
+  width: 100%;
+  max-width: 1230px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.secondary_nav {
+  opacity: 80%;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 14px;
+  list-style: none;
+}
+.item {
+  list-style: none;
+  display: flex;
+}
+.item_link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px 11px;
+  transition: 0.2s;
+}
+.item_link:hover {
+  color: #808080;
+  opacity: 100%;
+  font-size: 13px;
+  transition: 0.2s;
+}
+.main {
+  padding-top: 120px;
+  padding-bottom: 0px;
+}
+.main_nav {
+  margin: 0 20px;
+}
+.main_text {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+.secondary_text {
+  margin-top: 26px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: lowercase;
+  max-width: 268px;
+  margin: auto;
+}
+.secondary_text::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 60px;
+  background-color: #fff;
+  margin: 26px auto 0px;
+  opacity: 70%;
+}
+.front_line {
+  position: center;
+  border: 1px solid #ffffff;
+  margin: 0px;
+  max-height: 60px;
+  max-width: 1px;
+}
+.video {
+  margin: auto;
+  max-width: 1437px;
+  width: 90%;
+  height: 750px;
+}
+.features {
+  margin: auto;
+  padding: 50px 0px;
+  position: relative;
+}
+.features_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  width: 177px;
+  margin-bottom: 45px;
+}
+.table {
+  position: relative;
+  width: 500px;
+  height: 32px;
+  display: flex;
+  color: #fff;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 179.69%;
+  margin-bottom: 300px;
+}
+.table_colonn {
+  width: 300px;
+  text-transform: uppercase;
+}
+.table_colonn_sec {
+  width: 300px;
+}
+span {
+  color: grey;
+}
+.title_sec {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 0px;
+}
+.about {
+  width: 490px;
+  height: 145px;
+  left: 149px;
+  top: 2556px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+  margin-top: 45px;
+}
+.rocket {
+  max-width: 330px;
+  position: absolute;
+  top: 400px;
+  right: 0px;
+  z-index: 99;
+  transition: 0.2s;
+}
+.footer {
+  top: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.logo_footer {
+  margin-bottom: 43px;
+}
+.footer_nav {
+  display: flex;
+  padding: 0px;
+  width: 544px;
+  height: 21px;
+  left: 448px;
+}
+.mail {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.1s;
+}
+.mail:hover {
+  font-size: 18px;
+  transition: 0.1s;
+}
+.footer_text {
+  margin: 20px auto;
+  text-align: center;
+  width: 455px;
+  height: 21px;
+  left: 492px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #808080;
+  margin-bottom: 30px;
+}
+.button {
+  color: #fff;
+  padding: 20px 85px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 70px;
+  text-decoration: none;
+  position: relative;
+}
+.button:hover {
+  color: #fff;
+  font-size: 17px;
+  transition: 0.2s;
+}
+/*------------------*/
+@media (max-width: 960px) {
+  .features {
+    margin-left: 30px;
+  }
+  .rocket {
+    max-width: 240px;
+    transition: 0.3s;
+    right: 25px;
+  }
+  .overview {
+    font-size: 12px;
+  }
+  .footer {
+    margin-top: 0px;
+  }
+  .table_colonn {
+    width: 200px;
+  }
+}
+@media (max-width: 660px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rocket {
+    display: none;
+  }
+  .features_title,
+  .title_sec {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  .table,
+  .about {
+    max-width: 100%;
+  }
+  a.item_link {
+    margin-top: 10px;
+  }
+  .logo {
+    margin-bottom: 15px;
+  }
+  .footer_nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
