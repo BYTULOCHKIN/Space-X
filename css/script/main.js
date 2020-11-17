@@ -11,4 +11,3 @@ var instance = new vidbg(
   }
 );
 var rellax = new Rellax(".video");
-var rellax = new Rellax(".rocket");
